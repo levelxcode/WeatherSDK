@@ -74,6 +74,11 @@ try {
     System.err.println("Error: " + e.getMessage());
 }
 ```
+
+### Remember to shutdown the SDK when done to stop the polling thread
+```java
+pollingSdk.shutdown();
+```
 ### Example Response
 ```json
 {
